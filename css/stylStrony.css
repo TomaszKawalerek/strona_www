@@ -1,0 +1,33 @@
+ul{
+    list-style-type: square;
+}
+td{
+    background-color:rgba(0,100,200,0.1);
+}
+#tablica1{
+   border:1px solid grey;
+   margin-left:50px;
+   border-spacing:1px;
+}
+.komórka{
+    background-color:rgba(200,100,200,0.5);
+    text-align: center;
+}
+th{
+   background-color:rgba(0,0,200,0.1);
+   
+}
+body{
+    margin-top:50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    background-image: url(https://www.logismarket.pl/ip/mcomponents-toczenie-toczenie-915556-FGR.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-position-y: 400px;
+    
+}
+#toczenie{
+    margin-left: 20px;
+}
