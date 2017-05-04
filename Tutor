@@ -52,7 +52,7 @@ git push origin :...-usuwanie branchy z gita
 ----------------------------------------------------------------
 Tworzenie branchy:
 1.git checkout -b branchName
-2.git commit -a m 'Commit'
+2.git commit -a -m 'Commit'
 3.git push originName branchName
 ----------------------------------------------------------------
 vim ....txt-podglad pliku
