@@ -1,3 +1,4 @@
+/Notatka/
 git config --global user.name "Tomasz Kawalerek" - kto bedzie cos zmienial
 git config --global user.email tomekkawalerek@wp.pl - jaki email uzyc
 git init - Inicjalizacja, tworzenie nowego defaultowego repozytorium 
@@ -17,7 +18,9 @@ git log - wyswietla historie zmian
 git clone <adres repozytorium> - kolonowanie zdalnego repo np. do swojego laptopa
 git remote add origin https://github.com/try-git/try_git.git -wysylanie lokalnego repozytorium do GitHuba
 git push -u origin master - mowi Gitowi gdzie wstawic lokalne zmiany kiedy jestesmy gotowi,wyslanie do serwera zdalnego
-//Remote jest repozytorium gita, ktore moze byc na zewnatrz folderu gita.Moze byc w sieci,w osobnym folderze na komputerze
+*************************************************************************************
+  Remote jest repozytorium gita, ktore moze byc na zewnatrz folderu gita.Moze byc w sieci,w osobnym folderze na komputerze
+*****************************************************************************************
 origin - zdalnie(remote) , master - domyslna glowna kopia(branch)
 git pull origin master - sprawdzenie zmian na repozytorium 
 git diff HEAD- ostatnia zmiana -last commit,HEAD-wskaznik
@@ -40,8 +43,10 @@ git rm --cached nazwaPliku - usuwanie pliku ze Staging Area ale nie z dysku
 git commit -m"Remove all the cats" - commit zmian, nalezy potwierdzic
 git checkout master - przlaczenie z powrotem na master
 git merge clean-up - merging zmian, w trybie master, z clean_up do master
-git branch -d clean_up - usuwanie branchy clean_up z gita
-git branch - lista wszystkich branch w projekcie gita
+git branch -d clean_up - usuwanie zmergowanej branchy clean_up z repo
+git branch -v lista wszystkich branch w projekcie gita
+git branch -D ...-usuwanie niezmergowanej branchy z repo
+git push origin :...-usuwanie branchy z gita
 ----------------------------------------------------------------
 Jesli jest konflikt to:git fetch
 git add
@@ -50,8 +55,6 @@ git push - wyslanie wszystkiego do remote repository-zdalne repo
 git clone remote_location clone_name -utworzenie kopii -remote to moze byc web address , sciezka ; clone name -nazwa folderu
 git help - wyswietli dostepne funkcje
 git init - tworzy lokalne repozytorium na dysku
-
-
 git add README.txt
 Kiedy utworzymy jakis plik np README.txt to dodaje go najpierw do staging area.
 git commit m-'Add README.txt to staging area'
@@ -67,7 +70,6 @@ Kroki aby dodać cos na GitHuba:
 *git init
 *git add README.txt
 *git commit -a "pierwszy commit"
-
 *git push -u origin master
 ----------------------------------------------------------------------------------
 Jak sklonowac repozytorium z GitHuba?
@@ -75,4 +77,3 @@ Jak sklonowac repozytorium z GitHuba?
 2.zaznaczyc i wybrac fork
 3.przejsc do wlasnego repo(jesli nie zostalo to zrobione)
 3.w terminalu wpisac :git clone .........<---adres do wlasnego repo ze wskazaniem na obce repo
-
