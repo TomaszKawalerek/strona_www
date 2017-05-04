@@ -1,4 +1,5 @@
-/Notatka/
+
+/Notes/
 git config --global user.name "Tomasz Kawalerek" - kto bedzie cos zmienial
 git config --global user.email tomekkawalerek@wp.pl - jaki email uzyc
 git init - Inicjalizacja, tworzenie nowego defaultowego repozytorium 
@@ -46,7 +47,17 @@ git merge clean-up - merging zmian, w trybie master, z clean_up do master
 git branch -d clean_up - usuwanie zmergowanej branchy clean_up z repo
 git branch -v lista wszystkich branch w projekcie gita
 git branch -D ...-usuwanie niezmergowanej branchy z repo
+git push orogin...-dodawanie branchy do gita
 git push origin :...-usuwanie branchy z gita
+----------------------------------------------------------------
+Tworzenie branchy:
+1.git checkout -b branchName
+2.git commit -a m 'Commit'
+3.git push originName branchName
+----------------------------------------------------------------
+vim ....txt-podglad pliku
+i--edycja
+:wq-zapis i wyjscie
 ----------------------------------------------------------------
 Jesli jest konflikt to:git fetch
 git add
@@ -77,3 +88,4 @@ Jak sklonowac repozytorium z GitHuba?
 2.zaznaczyc i wybrac fork
 3.przejsc do wlasnego repo(jesli nie zostalo to zrobione)
 3.w terminalu wpisac :git clone .........<---adres do wlasnego repo ze wskazaniem na obce repo
+
