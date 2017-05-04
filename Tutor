@@ -22,10 +22,8 @@ origin - zdalnie(remote) , master - domyslna glowna kopia(branch)
 git pull origin master - sprawdzenie zmian na repozytorium 
 git diff HEAD- ostatnia zmiana -last commit,HEAD-wskaznik
 diff - mozna takze sprawdzac zmiany w plikach ktore sa dodane do przechowalni
-
 git remote -v - pokzauje liste remotow
 git fetch - przenoszenie zmian z glownego remote w gicie do tzw remote branch,ale nie do mastera
-
 git diff - roznica miedzy working directory a staging area
 git add octofamily/octodog.txt
 git diff --staged - ostatnia zmiana
@@ -44,8 +42,8 @@ git checkout master - przlaczenie z powrotem na master
 git merge clean-up - merging zmian, w trybie master, z clean_up do master
 git branch -d clean_up - usuwanie branchy clean_up z gita
 git branch - lista wszystkich branch w projekcie gita
+----------------------------------------------------------------
 Jesli jest konflikt to:git fetch
-
 git add
 git commit
 git push - wyslanie wszystkiego do remote repository-zdalne repo
