@@ -69,4 +69,10 @@ Kroki aby dodać cos na GitHuba:
 *git commit -a "pierwszy commit"
 
 *git push -u origin master
+----------------------------------------------------------------------------------
+Jak sklonowac repozytorium z GitHuba?
+1.wyszukac czyjes konto
+2.zaznaczyc i wybrac fork
+3.przejsc do wlasnego repo(jesli nie zostalo to zrobione)
+3.w terminalu wpisac :git clone .........<---adres do wlasnego repo ze wskazaniem na obce repo
 
