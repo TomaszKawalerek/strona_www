@@ -36,7 +36,6 @@ git reset HEAD cos.txt - cofa zmiany z staging area
 git reset SHA - dziala reset ale tylko dla pierwszych 7 znakow sygnatury commit
 git checkout -- octocat.txt -cofniecie zmian do sprzed commit
 git checkout HEAD filename - cofniecie ostatnich zmian w folderze
-git checkout brancha - przejscie do branch
 git branch clean_up - robi nowy branch o nazwie clean up,tzn kopia master zeby potem po zmianach rzutowac to na master.
 git checkout clean_up - przejscie do branch clean_up
 git rm '*.txt' - wymazywanie wszystkich plikow octocats z dysku
@@ -49,11 +48,20 @@ git branch -v lista wszystkich branch w projekcie gita
 git branch -D ...-usuwanie niezmergowanej branchy z repo
 git push orogin...-dodawanie branchy do gita
 git push origin :...-usuwanie branchy z gita
+***********************************************************
+Branche sa tymczasowa przechowalnia danych, ktore potem mozna przeniesc do trybu master
+***********************************************************
 ----------------------------------------------------------------
 Tworzenie branchy:
 1.git checkout -b branchName
 2.git commit -a -m 'Commit'
 3.git push originName branchName
+----------------------------------------------------------------
+Przenoszenie z branchy na master:
+1.przejsc w tryb master'
+2.wpisac: git merge branchName
+3.niepotrzebna branche mozna skasowac:git branch -d branchName
+
 ----------------------------------------------------------------
 vim ....txt-podglad pliku
 i--edycja
