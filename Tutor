@@ -22,7 +22,7 @@ origin - zdalnie(remote) , master - domyslna glowna kopia(branch)
 git pull origin master - sprawdzenie zmian na repozytorium 
 git diff HEAD- ostatnia zmiana -last commit,HEAD-wskaznik
 diff - mozna takze sprawdzac zmiany w plikach ktore sa dodane do przechowalni
-:
+
 git remote -v - pokzauje liste remotow
 git fetch - przenoszenie zmian z glownego remote w gicie do tzw remote branch,ale nie do mastera
 
