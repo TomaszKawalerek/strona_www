@@ -1,4 +1,4 @@
- /Notes/
+ /Notes 1.2/
 git config --global user.name "Tomasz Kawalerek" - kto bedzie cos zmienial
 git config --global user.email tomekkawalerek@wp.pl - jaki email uzyc
 git init - Inicjalizacja, tworzenie nowego defaultowego repozytorium 
