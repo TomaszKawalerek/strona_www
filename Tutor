@@ -1,0 +1,98 @@
+ /Notes/
+git config --global user.name "Tomasz Kawalerek" - kto bedzie cos zmienial
+git config --global user.email tomekkawalerek@wp.pl - jaki email uzyc
+git init - Inicjalizacja, tworzenie nowego defaultowego repozytorium 
+git status- Status projektu - co zmienilo sie w miedzy obecnym stanem w repo i co jest commitet -jesli jest untracked files tzn. git widzi plik
+ale nie zapisal zmian
+git add ...-dodawanie pliku do staging area lokalnego repozytorium na dysku
+Staging Area - poczekalnia-plik jeszcze nie jest w naszym repozytorium.
+Mozna dodawac lub usuwac pliki z poczekalni przed dodaniem do repozytorium.
+git commit -m"Add cute octocat story"-zatwierdzenie zmian w poczekalni
+git add '*.txt'-dodawanie wielu plikow w calym projekcie do poczekalni-staging area - o typie tekstowym
+git add --all - dodawanie wszystkich plikow
+git add *.txt - dodawanie plikow tekstowych do obecnego folderu
+git add docs/ , git add docs/*.txt
+git add css/ - dodawanie plikow do css folderu
+git commit -m'Add all the octocat txt files' - w tych nawiasach ''opisujemy co zrobilismy
+git log - wyswietla historie zmian
+git clone <adres repozytorium> - kolonowanie zdalnego repo np. do swojego laptopa
+git remote add origin https://github.com/try-git/try_git.git -wysylanie lokalnego repozytorium do GitHuba
+git push -u origin master - mowi Gitowi gdzie wstawic lokalne zmiany kiedy jestesmy gotowi,wyslanie do serwera zdalnego
+*************************************************************************************
+  Remote jest repozytorium gita, ktore moze byc na zewnatrz folderu gita.Moze byc w sieci,w osobnym folderze na komputerze
+*****************************************************************************************
+origin - zdalnie(remote) , master - domyslna glowna kopia(branch)
+git pull origin master - sprawdzenie zmian na repozytorium 
+git diff HEAD- ostatnia zmiana -last commit,HEAD-wskaznik
+diff - mozna takze sprawdzac zmiany w plikach ktore sa dodane do przechowalni
+git remote -v - pokzauje liste remotow
+git fetch - przenoszenie zmian z glownego remote w gicie do tzw remote branch,ale nie do mastera
+git diff - roznica miedzy working directory a staging area
+git add octofamily/octodog.txt
+git diff --staged - ostatnia zmiana
+git reset octofamily/octodog.txt -wymazanie octodog z poczekalni ale nie w ogole
+git reset HEAD cos.txt - cofa zmiany z staging area
+git reset SHA - dziala reset ale tylko dla pierwszych 7 znakow sygnatury commit
+git checkout -- octocat.txt -cofniecie zmian do sprzed commit
+git checkout HEAD filename - cofniecie ostatnich zmian w folderze
+git checkout brancha - przejscie do branch
+git branch clean_up - robi nowy branch o nazwie clean up,tzn kopia master zeby potem po zmianach rzutowac to na master.
+git checkout clean_up - przejscie do branch clean_up
+git rm '*.txt' - wymazywanie wszystkich plikow octocats z dysku
+git rm --cached nazwaPliku - usuwanie pliku ze Staging Area ale nie z dysku
+git commit -m"Remove all the cats" - commit zmian, nalezy potwierdzic
+git checkout master - przlaczenie z powrotem na master
+git merge clean-up - merging zmian, w trybie master, z clean_up do master
+*********************************************************************
+Branche sluza do tymczasowego przechowywania danych, ktore potem mozna przeniesc do master
+*********************************************************************
+git branch -d clean_up - usuwanie zmergowanej branchy clean_up z repo
+git branch -v lista wszystkich branch w projekcie gita
+git branch -D ...-usuwanie niezmergowanej branchy z repo
+git push orogin...-dodawanie branchy do gita
+git push origin :...-usuwanie branchy z gita
+----------------------------------------------------------------
+Tworzenie branchy:
+1.git checkout -b branchName
+2.git commit -a -m 'Commit'
+3.git push originName branchName
+----------------------------------------------------------------
+Po utworzeniu branchy mozna zrobic merging z master i ja usunac:
+1.git checkout master
+2.git merge branchName
+3.git branch -d branchName
+----------------------------------------------------------------
+vim ....txt-podglad pliku
+i--edycja
+:wq-zapis i wyjscie
+------------------------------------------------------------.orig----
+Jesli jest konflikt to:git fetch
+git add
+git commit
+git push - wyslanie wszystkiego do remote repository-zdalne repo
+git clone remote_location clone_name -utworzenie kopii -remote to moze byc web address , sciezka ; clone name -nazwa folderu
+git help - wyswietli dostepne funkcje
+git init - tworzy lokalne repozytorium na dysku
+git add README.txt
+Kiedy utworzymy jakis plik np README.txt to dodaje go najpierw do staging area.
+git commit m-'Add README.txt to staging area'
+Kiedy uzyjemy commit to robimy jakby zrzut tego co jest w staging area.
+
+Kiedy zrobimy jakas zmiane na README.txt to najpierw do staging area.
+Potem commit.
+
+-----------------------------------------------------------------------------------------------
+Kroki aby dodać cos na GitHuba:
+--założyć repozytorium przez commandline:
+*przejsc do katalogu np.README.txt
+*git init
+*git add README.txt
+*git commit -a "pierwszy commit"
+*git push -u origin master
+----------------------------------------------------------------------------------
+Jak sklonowac repozytorium z GitHuba?
+1.wyszukac czyjes konto
+2.zaznaczyc i wybrac fork
+3.przejsc do wlasnego repo(jesli nie zostalo to zrobione)
+3.w terminalu wpisac :git clone .........<---adres do wlasnego repo ze wskazaniem na obce repo
+
