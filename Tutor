@@ -1,5 +1,4 @@
-
-/Notes/
+ /Notes/
 git config --global user.name "Tomasz Kawalerek" - kto bedzie cos zmienial
 git config --global user.email tomekkawalerek@wp.pl - jaki email uzyc
 git init - Inicjalizacja, tworzenie nowego defaultowego repozytorium 
@@ -36,6 +35,7 @@ git reset HEAD cos.txt - cofa zmiany z staging area
 git reset SHA - dziala reset ale tylko dla pierwszych 7 znakow sygnatury commit
 git checkout -- octocat.txt -cofniecie zmian do sprzed commit
 git checkout HEAD filename - cofniecie ostatnich zmian w folderze
+git checkout brancha - przejscie do branch
 git branch clean_up - robi nowy branch o nazwie clean up,tzn kopia master zeby potem po zmianach rzutowac to na master.
 git checkout clean_up - przejscie do branch clean_up
 git rm '*.txt' - wymazywanie wszystkich plikow octocats z dysku
@@ -43,30 +43,29 @@ git rm --cached nazwaPliku - usuwanie pliku ze Staging Area ale nie z dysku
 git commit -m"Remove all the cats" - commit zmian, nalezy potwierdzic
 git checkout master - przlaczenie z powrotem na master
 git merge clean-up - merging zmian, w trybie master, z clean_up do master
+*********************************************************************
+Branche sluza do tymczasowego przechowywania danych, ktore potem mozna przeniesc do master
+*********************************************************************
 git branch -d clean_up - usuwanie zmergowanej branchy clean_up z repo
 git branch -v lista wszystkich branch w projekcie gita
 git branch -D ...-usuwanie niezmergowanej branchy z repo
 git push orogin...-dodawanie branchy do gita
 git push origin :...-usuwanie branchy z gita
-***********************************************************
-Branche sa tymczasowa przechowalnia danych, ktore potem mozna przeniesc do trybu master
-***********************************************************
 ----------------------------------------------------------------
 Tworzenie branchy:
 1.git checkout -b branchName
 2.git commit -a -m 'Commit'
 3.git push originName branchName
 ----------------------------------------------------------------
-Przenoszenie z branchy na master:
-1.przejsc w tryb master'
-2.wpisac: git merge branchName
-3.niepotrzebna branche mozna skasowac:git branch -d branchName
-
+Po utworzeniu branchy mozna zrobic merging z master i ja usunac:
+1.git checkout master
+2.git merge branchName
+3.git branch -d branchName
 ----------------------------------------------------------------
 vim ....txt-podglad pliku
 i--edycja
 :wq-zapis i wyjscie
-----------------------------------------------------------------
+------------------------------------------------------------.orig----
 Jesli jest konflikt to:git fetch
 git add
 git commit
