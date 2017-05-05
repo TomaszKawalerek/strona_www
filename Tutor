@@ -49,7 +49,7 @@ Branche sluza do tymczasowego przechowywania danych, ktore potem mozna przeniesc
 git branch -d clean_up - usuwanie zmergowanej branchy clean_up z repo
 git branch -v lista wszystkich branch w projekcie gita
 git branch -D ...-usuwanie niezmergowanej branchy z repo
-git push orogin...-dodawanie branchy do gita
+git push origin...-dodawanie branchy do gita
 git push origin :...-usuwanie branchy z gita
 ----------------------------------------------------------------
 Tworzenie branchy:
@@ -65,7 +65,7 @@ Po utworzeniu branchy mozna zrobic merging z master i ja usunac:
 vim ....txt-podglad pliku
 i--edycja
 :wq-zapis i wyjscie
-------------------------------------------------------------.orig----
+----------------------------------------------------------------
 Jesli jest konflikt to:git fetch
 git add
 git commit
